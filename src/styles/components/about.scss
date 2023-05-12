@@ -28,7 +28,7 @@
             background-size: 4px; 
             background-position: right;
             background-repeat: no-repeat;
-             
+            
             &-text {
                 background-color: $darkJet;
                 border: 1px solid $yellow;
@@ -63,6 +63,7 @@
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 grid-template-rows: 1fr;
                 gap: 15px;
+                
                 &-skill{
                     display: flex;
                     align-items: center;

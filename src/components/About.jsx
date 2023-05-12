@@ -41,7 +41,7 @@ export default function About() {
 
                             </div>
                             
-                            <h3>Habilidades y características</h3>
+                            <h3 style={{marginTop:'30px'}}>Habilidades y características</h3>
                             <ul className='about-content-description-skills'>
                                 {aboutData.skills.map((item, _) =>(
                                     <li key={_} className='about-content-description-skills-skill'>
