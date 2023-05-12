@@ -99,12 +99,15 @@
                 padding-left: 30px;
                 list-style: none;
                 
-                ::marker {
-                    content: "> ";
-                    color: $yellow;
+                
+                &-study{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
                 }
-                li{
-                    margin-bottom:10px;
+
+                &-icon{
+                    font-size: 30px;
                 }
             }
             
