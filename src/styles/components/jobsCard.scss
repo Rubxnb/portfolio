@@ -1,0 +1,57 @@
+@import'../theme.scss';
+
+.job{
+    display: flex;
+    gap: 20px;
+    height: 65px;
+    background-color: $darkJet;
+    border: 1px solid $yellow;
+    box-shadow: 0 0 10px #ffed94;
+    border-radius: 15px;
+    padding: 25px;
+
+    &-logo {
+        border: 1.5px solid $jet;
+        border-radius: 360px;
+        width: 55px;
+        height: 55px;
+    }
+    
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &-title{
+            align-items: center;
+            display: flex;
+            gap: 15px;
+            &-name {
+                margin: 0;
+            }
+    
+            &-period {
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+        
+
+        &-job {
+            margin: 0;
+        }
+
+        &-tech {
+            display: flex;
+            align-items: center;
+            &-icon {
+                font-size: 25px;
+            }
+
+            &-img {
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+}

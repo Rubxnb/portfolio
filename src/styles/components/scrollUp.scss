@@ -1,0 +1,43 @@
+@import '../theme.scss';
+
+
+.scrollUp {
+    display: flex;
+    width: 60px;
+    position: fixed;
+    bottom: 65px;
+    right: 15px;
+    border: 0;
+    border-radius: 50%;
+    color: $jet;
+    background: $yellow;
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    font-size: 60px;
+
+  }
+  
+  .scrollUp:hover {
+    cursor: pointer;
+    background-color:$turquoise;
+  }
+
+
+  .show{
+    opacity: 100;
+  }
+
+  .hidden{
+    opacity: 0;
+  }
+
+ // MEDIAQUERIES
+  
+  @media screen and (min-width:768px){
+    .scrollUp{
+      right: 25px;
+    }
+  }

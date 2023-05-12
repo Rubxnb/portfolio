@@ -1,0 +1,19 @@
+@import '../theme';
+
+.projects {
+    min-height: 100vh;
+    &-title{
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+
+    &-cards{
+        margin: 0 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1em;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

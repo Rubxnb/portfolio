@@ -1,0 +1,24 @@
+@import 'theme';
+
+/*jet seasalt*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    background-color: $jet;
+    width: 100%;
+    color: $yellow;
+    font-family: $Montserrat;
+    
+}
+
+#root{
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+@import '../theme';
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width:  250px;
+    height: 455px;
+    border: 1px solid $yellow;
+    box-shadow: 0 0 10px #ffed94;
+    background-color: $darkJet;
+    border-radius: 15px;
+    padding: 25px;
+    padding-top: 0;
+    margin: 0;
+    justify-content: space-between;
+
+    &-img{
+        width: 250px;
+        height: 230px;
+    }
+
+    &-links{
+        margin-top: 10px;
+    }
+
+    &-link{
+        font-size: 35px;
+    }
+
+    &-title{
+        text-align: center;
+    }
+
+    &-description{
+        color: white;
+        text-align: justify;
+    }
+
+    &-technologies{
+        display: flex;
+        gap: 5px;
+        &-icon{
+            font-size: 30px;
+        }
+    }
+}
