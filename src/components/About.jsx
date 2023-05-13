@@ -57,7 +57,7 @@ export default function About() {
                             <ul className='about-content-technologies-studies'>
                                 {aboutData.studies.map((item, _) =>(
                                     <li key={_} className='about-content-technologies-studies-study'>
-                                    <Icon className='about-content-technologies-studies-study-icon' icon={item.icon} />
+                                        <Icon className='about-content-technologies-studies-study-icon' icon={item.icon} />
                                         <p>{item.study}</p>
                                     </li>
                                 ))}

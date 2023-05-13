@@ -15,10 +15,16 @@ export default function JobsCard({job}) {
             <div className='job-info-tech'>
                 {
                     job.technologies.map((tech, _) => {
-                        if(tech.includes(':'))
+                        
+                        if(!tech.includes('.png')){
+
+                        console.log(tech)
                             return <Icon className='job-info-tech-icon' key={_} icon={tech}/>
-                        else
+                        }
+                        else{
+                            console.log(tech)
                             return <img className='job-info-tech-img' key={_} src={tech}/>
+                        }
                     })
                 }
             </div>
