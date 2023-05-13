@@ -17,13 +17,13 @@ export async function getHomeData() {
 export async function getAboutData() {
     const querySnapshot = await getDoc(doc(db, 'about', 'MBDe5gqPZWIhWHPooLtJ'))
     const data = querySnapshot.data()
-    
     return {
         description: data.description,
         languages: data.languages,
         studies: data.studies,
         jobs: data.jobs.reverse(),
-        skills: data.skills
+        skills: data.skills,
+        footer: data.footer
     }
 }
 

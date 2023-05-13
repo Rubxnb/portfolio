@@ -19,6 +19,7 @@ const ScrollUp = () => {
           top: 0,
           behavior: 'smooth',
         })
+
     }
     
     useEffect(() => {

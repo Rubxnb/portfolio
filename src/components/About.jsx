@@ -15,7 +15,6 @@ export default function About() {
     const getData = async () => {
         const query = await getAboutData()
         setAboutData(query)
-        
       }
 
     return (
@@ -27,7 +26,7 @@ export default function About() {
                     aboutData && 
                     <div className='about-content'>
                         <div className='about-content-description'>
-                            <h3>¡Hola 🖐! Soy Rubén</h3>
+                            <h3>¡Hola!🖐 Soy Rubén</h3>
                             <div className='about-content-description-text'>
 
                                 <p>{aboutData.description}</p>
@@ -82,9 +81,36 @@ export default function About() {
                     </div>
                 }
             </div>
+
+            
         
             <div className="about-footer">
-                prueba
+                <h1 style={{padding: '0', margin:'0'}}>Rubxn</h1>
+                <ul className='about-footer-contacts'>
+                    {aboutData &&
+                    aboutData.footer.map((item, _) => {
+                        if(item.contact.includes('@'))
+                            return <li className='about-footer-contacts-contact' key= {_}>
+                                        
+                                        <Icon className='about-footer-contacts-contact-icon' icon={item.icon} ></Icon>
+                                        <p>{item.contact}</p>
+
+                                    </li>
+                        else
+                            return <li className='about-footer-contacts-contact' key= {_} >
+                                        <a className='about-footer-contacts-contact-content'
+                                        href={item.contact} 
+                                        title={item.contact}  
+                                        target='_blank'
+                                        >
+                                            <Icon className='about-footer-contacts-contact-icon' icon={item.icon} />
+                                        </a>
+                                    </li>
+
+                    }) 
+                    }
+                </ul>
+               
             </div>
 
         </div>
