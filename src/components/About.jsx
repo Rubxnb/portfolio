@@ -14,6 +14,7 @@ export default function About() {
 
     const getData = async () => {
         const query = await getAboutData()
+        console.log(query.studies)
         setAboutData(query)
       }
 

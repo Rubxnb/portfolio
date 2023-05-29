@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Socials from './Socials'
 import { getHomeData } from '../services/dataFetching'
 import '../styles/components/home.scss'
+import cv from '/Ruben_BM_CV.pdf'
 
 export default function Home() {
   
@@ -16,6 +17,12 @@ export default function Home() {
     setHomeData(query)
     
   }
+
+
+  function downloadCV() {
+    window.open(cv, '_blank')
+  }
+
   return (
     
     <div className='home'>
@@ -28,7 +35,7 @@ export default function Home() {
                 <h1>{homeData.name}</h1>
                 <h2>{homeData.description}</h2>
               </div>
-              <button>Descargar CV</button>
+              <button onClick={downloadCV}>Descargar CV</button>
             </div>
             <img className='home_image' src='https://avatars.githubusercontent.com/u/67047753?v=4' alt='ad'/> 
    
