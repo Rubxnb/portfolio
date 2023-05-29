@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Socials from './Socials'
 import { getHomeData } from '../services/dataFetching'
 import '../styles/components/home.scss'
-import cv from '/Ruben_BM_CV.pdf'
+import cv from '../assets/Ruben_BM _CV.pdf'
 
 export default function Home() {
   
